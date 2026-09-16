@@ -1,0 +1,7 @@
+ipykernel
+jupyterlab
+matplotlib==3.5.2
+notebook
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.0.2

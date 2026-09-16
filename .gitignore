@@ -22,7 +22,3 @@ desktop.ini
 # Datos pesados y modelos
 *.ckpt
 *.pth
-
-#placeholders iniciales
-.placeholder
-
