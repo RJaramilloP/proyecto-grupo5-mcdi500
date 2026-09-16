@@ -36,4 +36,4 @@ P2,Ciclo colaborativo,Editar el notebook,F1 y F2,Celda narrativa acompañada de 
 P2,Ciclo colaborativo,Ejecutar de principio a fin sin errores,F1 y F2,"Numeración de ejecución continua, cero errores",Materializado
 P2,Ciclo colaborativo,Commit con prefijo,Historial del repositorio,"feat, data, docs y fix",Materializado
 P2,Ciclo colaborativo,Push y pull request,Repositorio remoto,Revisión previa a la integración,Materializado
-P2,Ciclo colaborativo,Integrar a la rama principal,Historial del repositorio,git shortlog -sne con los cuatro integrantes,Materializado
+P2,Ciclo colaborativo,Integrar a la rama principal,Historial del repositorio,git shortlog -sne con los tres integrantes,Materializado
