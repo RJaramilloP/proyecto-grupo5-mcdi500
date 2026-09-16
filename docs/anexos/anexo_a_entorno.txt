@@ -1,11 +1,11 @@
-Intérprete       : /opt/anaconda3/bin/python
-Entorno virtual  : [AVISO] parece el Python del sistema
+Intérprete       : /Users/ricardo/Desktop/Repositorios/proyecto-grupo5-mcdi500/.venv/bin/python
+Entorno virtual  : [OK] activo
 Carpeta de trabajo: /Users/ricardo/Desktop/Repositorios/proyecto-grupo5-mcdi500/F1/notebooks
 Sistema          : Darwin 25.6.0
 Python           : 3.9.13
 
 Librerías declaradas
-  [OK]    numpy        1.26.4
+  [OK]    numpy        2.0.2
   [OK]    pandas       2.3.3
-  [OK]    matplotlib   3.5.2
-  [OK]    sklearn      1.0.2
+  [OK]    matplotlib   3.9.4
+  [OK]    sklearn      1.6.1

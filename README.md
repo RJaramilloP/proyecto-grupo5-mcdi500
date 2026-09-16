@@ -44,11 +44,11 @@ Ejecutar los cuadernos en orden: primero F1, después F2.
 ### Dependencias declaradas
 - ipykernel
 - jupyterlab
-- matplotlib==3.5.2
+- matplotlib==3.9.4
 - notebook
-- numpy==1.26.4
+- numpy==2.0.2
 - pandas==2.3.3
-- scikit-learn==1.0.2
+- scikit-learn==1.6.1
 
 ## Convención de commits
 Prefijos usados: docs, data, feat, fix.

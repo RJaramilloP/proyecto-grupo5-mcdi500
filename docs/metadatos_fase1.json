@@ -6,13 +6,13 @@
   "semilla": 42,
   "python": "3.9.13",
   "sistema": "Darwin 25.6.0",
-  "interprete": "/opt/anaconda3/bin/python",
-  "entorno_virtual": false,
+  "interprete": "/Users/ricardo/Desktop/Repositorios/proyecto-grupo5-mcdi500/.venv/bin/python",
+  "entorno_virtual": true,
   "dependencias": {
-    "numpy": "1.26.4",
+    "numpy": "2.0.2",
     "pandas": "2.3.3",
-    "matplotlib": "3.5.2",
-    "sklearn": "1.0.2"
+    "matplotlib": "3.9.4",
+    "sklearn": "1.6.1"
   },
   "modo_rutas": "estructurado",
   "fuente": {
