@@ -1,0 +1,24 @@
+variable,rol_analitico,uso,descripcion
+duracion_dias,discreta,objetivo,Duracion autorizada en dias: permit_end_date - permit_start_date
+tipo_permiso,nominal,explicativa,Tipo de permiso; 12 niveles principales + Otros
+analysis_neighborhood,alta cardinalidad,explicativa,Barrio de emplazamiento; 41 niveles
+agente,nominal,explicativa,Agente solicitante; 12 principales + Otros. NO es el organismo emisor
+anio_aprobacion,discreta,explicativa,"Anio de aprobacion, derivado de Approved Date"
+distrito,nominal,explicativa,Distrito del supervisor; 11 niveles + Desconocido
+n_segmentos,discreta,explicativa,Segmentos de calle que abarca el permiso; proxy del tamanio del proyecto
+lag_aprob_inicio,discreta,explicativa,Dias entre aprobacion e inicio; negativo en aprobaciones retroactivas
+mes_inicio,discreta,explicativa,Mes de inicio; estacionalidad
+Permit Purpose,texto libre,explicativa,"Descripcion del proposito; 26,3% ausente y la ausencia es informativa"
+Inspector,alta cardinalidad,explicativa,"Inspector municipal asignado; 38,5% ausente y la ausencia es informativa"
+permit_zipcode,alta cardinalidad,explicativa,Codigo postal; el valor 0 es centinela de ausencia
+Status,binaria,no_usada,Estado administrativo; no es un factor de la pregunta
+permit_number,alta cardinalidad,grupo,Identificador del permiso; unidad de agrupacion para la particion
+permit_start_date,fecha,fuente_objetivo,Componente del objetivo; no puede ser explicativa
+permit_end_date,fecha,fuente_objetivo,Componente del objetivo; no puede ser explicativa
+Approved Date,fecha,fuente_derivada,Origen de anio_aprobacion y lag_aprob_inicio
+data_as_of,fecha,trazabilidad,Sello de actualizacion del portal
+Latitude,continua,validacion,Latitud; validacion espacial y mapas de la Fase 4
+Longitude,continua,validacion,Longitud; validacion espacial y mapas de la Fase 4
+streetname,alta cardinalidad,contexto,Calle principal del segmento
+Cross Street 1,alta cardinalidad,contexto,Primera calle transversal
+Cross Street 2,alta cardinalidad,contexto,"Segunda calle transversal; 16,0% ausente"

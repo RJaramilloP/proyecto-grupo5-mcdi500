@@ -1,0 +1,11 @@
+criterio,minimo,observado,cumple,por que se pide
+Filas,2000,6010,si,Permite agrupar por categoria sin grupos vacios
+Columnas,12,23,si,Asegura variedad de roles analiticos
+Numericas continuas,2,2,si,Escalamiento y valores atipicos
+Numerica discreta,1,5,si,Obliga a decidir numero frente a categoria
+Categoricas nominales,2,3,si,Codificacion One-Hot
+Binaria u ordinal,1,1,si,Codificacion con orden declarado
+Fecha,1,4,si,Parseo y derivacion de variables temporales
+Texto o alta cardinalidad,1,8,si,Normalizacion y agrupacion
+Alguna variable con >=1% de nulos,1,38.47,si,Un conjunto perfecto no tiene preprocesamiento que justificar
+Ninguna variable sobre 60% de nulos,60,38.47,si,Por encima de eso la variable no es recuperable

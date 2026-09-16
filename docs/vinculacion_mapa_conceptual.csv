@@ -1,0 +1,39 @@
+pagina,rama,nodo,materializado_en,evidencia,estado
+P1,1 · Problemática y datos,Pregunta de investigación,F1 §1 · PROYECTO['preguntas'],Enunciado aprobado por el docente,Materializado
+P1,1 · Problemática y datos,Variable objetivo (duracion_dias),F1 §5.3 · diccionario,duracion_dias = permit_end_date - permit_start_date,Materializado
+P1,1 · Problemática y datos,Factores explicativos,F1 §5.3 · metadatos_fase1.json,Nueve variables explicativas declaradas,Materializado
+P1,1 · Problemática y datos,Fuente de datos (DataSF x8nh-xzn6),F1 §5.1 · FICHA,Licencia PDDL 1.0; corte verificado 2026-09-09,Materializado
+P1,1 · Problemática y datos,Exploración inicial,F1 §5.2 y §5.4,"Perfil por columna, roles y faltantes",Materializado
+P1,1 · Problemática y datos,Limitación declarada,F1 §1 y §5.4,docs/sesgo_seleccion.csv: mínimo creciente 2→98→437→997,Materializado
+P1,2 · Entorno reproducible,Python 3.x,F1 §2 · verificar_entorno,Intérprete y plataforma registrados,Materializado
+P1,2 · Entorno reproducible,Entorno virtual .venv,F1 §2 · verificar_entorno,Campo entorno_virtual en los metadatos,Materializado
+P1,2 · Entorno reproducible,requirements.txt,F1 §3.2 · escribir_requirements,Generado desde las versiones instaladas,Materializado
+P1,2 · Entorno reproducible,Semilla fija,F1 §0 y F2 §1,SEMILLA = 42 en ambos cuadernos y en los metadatos,Materializado
+P1,2 · Entorno reproducible,Rutas relativas,F1 §3 · localizar_raiz,Pruebas de la §4.1; ejecutado desde F1/notebooks/,Materializado
+P1,3 · Herramientas científicas,Jupyter Notebook,F1 y F2 completos,"Numeración de ejecución continua, sin errores",Materializado
+P1,3 · Herramientas científicas,Librerías,F1 §2 · DEPENDENCIAS,"pandas, numpy, matplotlib, scikit-learn con versión fijada",Materializado
+P1,3 · Herramientas científicas,Git,F1 §6 · función git(),"Rama, commits y estado del árbol",Materializado
+P1,3 · Herramientas científicas,GitHub,Repositorio remoto,URL citada en el informe,Materializado
+P1,4 · Estructura del entorno técnico,Repositorio,Raíz del proyecto,proyecto-grupo5-mcdi500,Materializado
+P1,4 · Estructura del entorno técnico,Carpetas,F1 §3,"data/raw, data/processed, docs, src, F1-F4",Materializado
+P1,4 · Estructura del entorno técnico,Archivos clave,"F1 §3.1, §3.2 y §9","README.md, requirements.txt, .gitignore",Materializado
+P1,4 · Estructura del entorno técnico,Commits proyectados,F1 §6 · convención,"Prefijos feat, data, docs y fix",Materializado
+P1,4 · Estructura del entorno técnico,Criterios de versionamiento,README y F1 §6,Rama por integrante; datos crudos inmutables,Materializado
+P1,5 · Documentación científica,Celdas narrativas,F1 y F2,Cada decisión precedida de su justificación,Materializado
+P1,5 · Documentación científica,Celdas de código,F1 y F2,Funciones con docstring y pruebas,Materializado
+P1,5 · Documentación científica,Diccionario de variables,F1 §5.3,"docs/diccionario_variables.csv, 23 variables",Materializado
+P1,5 · Documentación científica,Metadatos por fase,F1 §9 y F2 §9,metadatos_fase1.json y metadatos_fase2.json,Materializado
+P1,5 · Documentación científica,Informe técnico,Entregable de la Sumativa 1,"Ocho apartados, bibliografía APA 7 y anexos",Materializado
+P2,Flujo reproducible,1. Obtener y registrar la fuente,F1 §5.1 y §5.4,data/raw intacto; comprobación en F2,Materializado
+P2,Flujo reproducible,2. Configurar el entorno,F1 §2 y §3.2,requirements.txt generado desde el entorno,Materializado
+P2,Flujo reproducible,3. Estructurar y versionar,F1 §3 y §6,Árbol creado y validado; consultas a git,Materializado
+P2,Flujo reproducible,4. Definir variables y roles,F1 §5.3 y §9,Diccionario y metadatos como contrato entre fases,Materializado
+P2,Flujo reproducible,5. Limpiar y transformar,F2 §3 a §7,data/processed con los conjuntos limpio y procesado,Materializado
+P2,Flujo reproducible,6. Validar,F2 §8,"docs/validacion_fase2.csv, 12 de 12 comprobaciones",Materializado
+P2,Flujo reproducible,"7. Modelar, analizar y comunicar",Fases 3 y 4,"Modelado, eficiencia algorítmica y hallazgos",Proyectado
+P2,Ciclo colaborativo,Rama por integrante,Historial del repositorio,Ramas nominales antes de integrar,Materializado
+P2,Ciclo colaborativo,Editar el notebook,F1 y F2,Celda narrativa acompañada de celda de código,Materializado
+P2,Ciclo colaborativo,Ejecutar de principio a fin sin errores,F1 y F2,"Numeración de ejecución continua, cero errores",Materializado
+P2,Ciclo colaborativo,Commit con prefijo,Historial del repositorio,"feat, data, docs y fix",Materializado
+P2,Ciclo colaborativo,Push y pull request,Repositorio remoto,Revisión previa a la integración,Materializado
+P2,Ciclo colaborativo,Integrar a la rama principal,Historial del repositorio,git shortlog -sne con los cuatro integrantes,Materializado
