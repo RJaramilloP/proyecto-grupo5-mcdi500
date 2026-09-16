@@ -1,0 +1,95 @@
+---
+config:
+  theme: base
+  themeVariables:
+    fontFamily: Arial, Helvetica, sans-serif
+    fontSize: 14px
+    primaryTextColor: "#12263A"
+    lineColor: "#5A6B7D"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 44
+    curve: linear
+---
+flowchart TB
+
+    T["<b>GRUPO 5 · FLUJO DE TRABAJO REPRODUCIBLE Y LEYENDA</b><br/><i>Factores asociados a la duración autorizada de los permisos de uso de vía pública en San Francisco · MCDI500 · Página 2 de 2</i>"]
+
+%% ============ FLUJO POR ETAPAS ============
+    subgraph FLUJO["FLUJO REPRODUCIBLE — CADA ETAPA GENERA UN ARTEFACTO VERSIONADO"]
+    direction LR
+        subgraph SF1["FASE 1 · definición y orientación"]
+        direction LR
+            E1["<b>1. Obtener y registrar<br/>la fuente</b><br/><i>descarga única; el archivo<br/>no se vuelve a bajar</i><br/>genera: <b>data/raw/</b>"]
+            E2["<b>2. Configurar<br/>el entorno</b><br/><i>venv, dependencias, semilla</i><br/>genera: <b>requirements.txt</b>"]
+            E3["<b>3. Estructurar<br/>y versionar</b><br/><i>carpetas, README,<br/>primeros commits</i><br/>genera: <b>repositorio</b>"]
+            E4["<b>4. Definir variables<br/>y roles</b><br/><i>objetivo, explicativas,<br/>exclusiones</i><br/>genera: <b>diccionario + metadatos</b>"]
+            E1 -->|"conduce a"| E2
+            E2 -->|"conduce a"| E3
+            E3 -->|"conduce a"| E4
+        end
+        subgraph SF2["FASE 2 · preparación de los datos"]
+        direction LR
+            E5["<b>5. Limpiar y<br/>transformar</b><br/><i>tipos, faltantes,<br/>codificación, escalado</i><br/>genera: <b>data/processed/</b>"]
+            E6["<b>6. Validar</b><br/><i>comprobaciones<br/>verificables</i><br/>genera: <b>tabla de validacion</b>"]
+            E5 -->|"conduce a"| E6
+        end
+        subgraph SF34["FASES 3 y 4 · análisis y cierre"]
+        direction LR
+            E7["<b>7. Modelar, analizar<br/>y comunicar</b><br/><i>hallazgos y limitaciones</i><br/>genera: <b>informe técnico APA 7</b>"]
+        end
+        E4 -->|"conduce a"| E5
+        E6 -->|"conduce a"| E7
+    end
+
+%% ============ CICLO COLABORATIVO ============
+    subgraph CICLO["CICLO COLABORATIVO SOBRE EL NOTEBOOK REPRODUCIBLE"]
+    direction LR
+        C1["Rama por<br/>integrante"]
+        C2(["Editar el notebook<br/><i>celda narrativa +<br/>celda de código</i>"])
+        C3{{"Ejecutar de principio<br/>a fin sin errores"}}
+        C4["Commit con prefijo<br/><i>feat · data · docs · fix</i>"]
+        C5(["Push y <b>pull request</b><br/>en GitHub"])
+        C6["Integrar a la<br/>rama principal"]
+        C1 -->|"conduce a"| C2
+        C2 -->|"requiere"| C3
+        C3 -->|"conduce a"| C4
+        C4 -->|"conduce a"| C5
+        C5 -->|"conduce a"| C6
+        C6 -.->|"vuelve a"| C1
+    end
+
+%% ============ LEYENDA ============
+    subgraph LEY["LEYENDA"]
+    direction LR
+        L1["Proceso<br/>o etapa"]
+        L2(["Herramienta<br/>o acción"])
+        L3[("Conjunto<br/>de datos")]
+        L4[/"Artefacto<br/>documental"/]
+        L5{{"Decisión<br/>o criterio"}}
+        L6["<b>Conectores usados</b><br/>requiere · depende de · incluye<br/>genera · conduce a · vuelve a"]
+        L7["<b>Línea continua</b>: secuencia directa<br/><b>Línea punteada</b>: retorno del ciclo<br/><br/><b>Este mapa consta de dos páginas;</b><br/>la leyenda se repite en ambas."]
+    end
+
+    T --> FLUJO
+    FLUJO --> CICLO
+    CICLO --> LEY
+
+%% ============ ESTILOS ============
+    classDef titulo fill:#1B2A41,stroke:#1B2A41,color:#FFFFFF
+    classDef etapa fill:#E8F1FB,stroke:#4C72B0
+    classDef etapa2 fill:#EAF6EF,stroke:#2E8B57
+    classDef etapa3 fill:#FDEEF0,stroke:#C44E52
+    classDef herram fill:#FFF4E3,stroke:#D98324
+    classDef crit fill:#F3EDFA,stroke:#7B5EA7
+    classDef marco fill:#FBFCFD,stroke:#C6CFD8
+    classDef fase fill:#FFFFFF,stroke:#8A97A5
+
+    class T titulo
+    class E1,E2,E3,E4,C1,C4,C6,L1 etapa
+    class E5,E6,L3 etapa2
+    class E7,L4,L6,L7 etapa3
+    class C2,C5,L2 herram
+    class C3,L5 crit
+    class FLUJO,CICLO,LEY marco
+    class SF1,SF2,SF34 fase

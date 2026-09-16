@@ -1,0 +1,110 @@
+---
+config:
+  theme: base
+  themeVariables:
+    fontFamily: Arial, Helvetica, sans-serif
+    fontSize: 14px
+    primaryTextColor: "#12263A"
+    lineColor: "#5A6B7D"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 50
+    curve: linear
+---
+flowchart TB
+
+    P["<b>PROYECTO TRANSVERSAL · GRUPO 5</b><br/>Factores asociados a la duración autorizada de los permisos de uso de vía pública en San Francisco<br/><i>MCDI500 · Fase 1: definición y orientación de la situación · Página 1 de 2</i>"]
+
+    H1["<b>1 · PROBLEMÁTICA<br/>Y DATOS</b>"]
+    H2["<b>2 · ENTORNO<br/>REPRODUCIBLE</b>"]
+    H3["<b>3 · HERRAMIENTAS<br/>CIENTÍFICAS</b>"]
+    H4["<b>4 · ESTRUCTURA DEL<br/>ENTORNO TÉCNICO</b>"]
+    H5["<b>5 · DOCUMENTACIÓN<br/>CIENTÍFICA</b>"]
+
+    P -->|"incluye"| H1
+    P -->|"requiere"| H2
+    P -->|"requiere"| H3
+    P -->|"genera"| H4
+    P -->|"genera"| H5
+
+%% ---------- rama 1 ----------
+    H1 -->|"incluye"| Q["Pregunta de investigación<br/><i>qué factores se asocian a la<br/>duración autorizada</i>"]
+    Q  -->|"define"| OBJ["Variable objetivo<br/><b>duracion_dias</b><br/><i>fecha término − fecha inicio</i>"]
+    Q  -->|"define"| EXP["Factores explicativos<br/><i>tipo de permiso · barrio ·<br/>agente solicitante · año</i>"]
+    OBJ -->|"depende de"| FUENTE[("Fuente de datos<br/><b>DataSF x8nh-xzn6</b><br/>SF Public Works<br/>Licencia PDDL 1.0<br/>corte 09-09-2026")]
+    FUENTE -->|"requiere"| EXPLORA["Exploración inicial<br/><i>tipos, faltantes,<br/>cardinalidad, cobertura</i>"]
+    EXPLORA -->|"conduce a"| SESGO{{"Limitación declarada<br/><i>solo permisos vigentes:<br/>sobrerrepresenta los largos</i>"}}
+
+%% ---------- rama 2 ----------
+    H2 -->|"requiere"| PY(["Python 3.x"])
+    PY -->|"requiere"| VENV(["Entorno virtual <b>.venv</b>"])
+    VENV -->|"genera"| REQ[/"<b>requirements.txt</b><br/><i>versiones fijadas</i>"/]
+    REQ -->|"conduce a"| SEM["Semilla fija<br/><b>random_state = 42</b>"]
+    SEM -->|"conduce a"| RUTAS["Rutas relativas<br/><i>sin caminos absolutos</i>"]
+
+%% ---------- rama 3 ----------
+    H3 -->|"incluye"| JUP(["<b>Jupyter Notebook</b><br/><i>ejecución lineal y<br/>salidas visibles</i>"])
+    JUP -->|"requiere"| LIBS(["Librerías<br/><i>pandas · numpy ·<br/>matplotlib · scikit-learn</i>"])
+    LIBS -->|"conduce a"| GIT(["<b>Git</b><br/><i>control de versiones local</i>"])
+    GIT -->|"conduce a"| HUB(["<b>GitHub</b><br/><i>colaboración y trazabilidad</i>"])
+
+%% ---------- rama 4 ----------
+    H4 -->|"incluye"| REPO["Repositorio<br/><b>proyecto-grupo5-mcdi500</b>"]
+    REPO -->|"incluye"| DIRS["Carpetas<br/><i>data/raw · data/processed<br/>docs · src · F1 F2 F3 F4</i>"]
+    DIRS -->|"incluye"| FILES[/"Archivos clave<br/><i>README.md · .gitignore<br/>notebooks .ipynb · utilidades.py</i>"/]
+    FILES -->|"genera"| COMMITS["Commits proyectados<br/><i>feat: entorno y estructura<br/>data: conjunto original<br/>docs: diccionario<br/>fix: parseo de fechas</i>"]
+    COMMITS -->|"depende de"| VERS{{"Criterios de versionamiento<br/><i>una rama por integrante ·<br/>mensajes con prefijo ·<br/>datos crudos inmutables</i>"}}
+
+%% ---------- rama 5 ----------
+    H5 -->|"incluye"| NARR["Celdas narrativas<br/><i>qué se hace y por qué</i>"]
+    NARR -->|"acompaña a"| CODE["Celdas de código<br/><i>funciones con docstring<br/>y pruebas</i>"]
+    CODE -->|"genera"| DICC[/"Diccionario de variables<br/><i>rol analítico y uso</i>"/]
+    DICC -->|"genera"| META[/"Metadatos por fase<br/><i>contrato entre F1 y F2</i>"/]
+    META -->|"conduce a"| INF[/"<b>Informe técnico</b><br/><i>referencias APA 7 y<br/>comunicación de resultados</i>"/]
+
+%% ========== INTEGRACIÓN ENTRE RAMAS ==========
+%% Las herramientas atraviesan el resto del proceso: todos los enlaces
+%% de integración parten de la rama 3.
+    JUP -.->|"depende de"| REQ
+    JUP -.->|"ejecuta"| EXPLORA
+    JUP -.->|"documenta"| CODE
+    GIT -.->|"versiona"| FILES
+    HUB -.->|"aloja"| REPO
+
+%% ========== RETORNO ==========
+    EXPLORA -.->|"reformula"| Q
+
+%% ---------- leyenda ----------
+    subgraph LEY["LEYENDA"]
+    direction TB
+        L1["Proceso o concepto"]
+        L2(["Herramienta de software"])
+        L3[("Fuente o conjunto de datos")]
+        L4[/"Artefacto documental"/]
+        L5{{"Decisión o criterio"}}
+        L6["<b>Conectores</b><br/>requiere · depende de · incluye<br/>genera · conduce a · define"]
+        L7["<b>Línea continua</b>: relación dentro de una rama<br/><b>Línea punteada</b>: integración entre ramas<br/>y retornos del proceso"]
+        L8["<b>El color identifica la rama</b><br/>azul datos · verde entorno · ámbar herramientas<br/>violeta repositorio · rojo documentación"]
+        L9["<b>Este mapa consta de dos páginas.</b><br/>Página 1: jerarquía conceptual e integración.<br/>Página 2: secuencia temporal y ciclo colaborativo.<br/>La leyenda se repite en ambas."]
+    end
+
+%% ---------- estilos ----------
+    classDef nucleo fill:#1B2A41,stroke:#1B2A41,color:#FFFFFF
+    classDef cab fill:#FFFFFF,stroke:#1B2A41,stroke-width:2px,color:#1B2A41
+    classDef datos fill:#E8F1FB,stroke:#4C72B0
+    classDef entorno fill:#EAF6EF,stroke:#2E8B57
+    classDef herram fill:#FFF4E3,stroke:#D98324
+    classDef repo fill:#F3EDFA,stroke:#7B5EA7
+    classDef docu fill:#FDEEF0,stroke:#C44E52
+    classDef leyfill fill:#FFFFFF,stroke:#9AA7B4,color:#2B2B2B
+    classDef marco fill:#FBFCFD,stroke:#C6CFD8
+
+    class P nucleo
+    class H1,H2,H3,H4,H5 cab
+    class Q,OBJ,EXP,FUENTE,EXPLORA,SESGO datos
+    class PY,VENV,REQ,SEM,RUTAS entorno
+    class JUP,LIBS,GIT,HUB herram
+    class REPO,DIRS,FILES,COMMITS,VERS repo
+    class NARR,CODE,DICC,META,INF docu
+    class L1,L2,L3,L4,L5,L6,L7,L8,L9 leyfill
+    class LEY marco
