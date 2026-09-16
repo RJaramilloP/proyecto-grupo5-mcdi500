@@ -1,7 +1,7 @@
 [OK] Caso normal: normalización y localización de la raíz
 [OK] Caso límite: signos, lista vacía y archivo inexistente
 [OK] Caso límite: respaldo sin marcador y detección con marcador
-[OK] Excepción capturada (raíz): No se encontro marcador de repositorio desde /private/var/folders/25/1d9z1__s1fl2f9r35bnxb_080000gn/T/tmpq56uxumg
+[OK] Excepción capturada (raíz): No se encontro marcador de repositorio desde /private/var/folders/25/1d9z1__s1fl2f9r35bnxb_080000gn/T/tmpg4jjum1j
 [OK] Excepción capturada (tipo): Se esperaba texto y se recibio int.
 [OK] Excepción capturada (duplicados): La normalizacion produjo nombres duplicados.
 [OK] Excepción capturada (columnas): "Faltan columnas para derivar: ['Agent', 'Approved Date', 'P...

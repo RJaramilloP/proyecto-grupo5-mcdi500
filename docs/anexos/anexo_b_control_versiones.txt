@@ -1,26 +1,19 @@
 Rama actual        : main
 
 Últimos commits
+b7875ca feat: Generación de artefactos y anexos para informe vía código
 37b46c2 feat: Generación dinámica de README para repositorio
 13b8c2e feat: Se analiza mapa conceptual y se implementa etapa 8 de vinculación con proyecto. Se realiza de manera grupal.
 afe4b74 feat: Se implementa fase de validación técnica
 13d43d6 feat: Implementación de sección 6 para revisar control de versiones según definición del curso
-0167db8 fix: Creado códigos de TODO de verificaciones sección 5.4
 
 Contribuciones por integrante
-8	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
-     8	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
+9	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
+     8	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
      8	belenfassler <102735967+belenfassler@users.noreply.github.com>
 
-Archivos con cambios sin registrar: 9
-   M F1/notebooks/F1_Prueba.ipynb
-   ?? docs/anexos/
-   ?? docs/ausencia_informativa.csv
-   ?? docs/diccionario_variables.csv
-   ?? docs/evaluacion_criterios_dataset.csv
-   ?? docs/metadatos_fase1.json
-   ?? docs/sesgo_seleccion.csv
-   ?? docs/verificacion_fechas.csv
-   ?? docs/vinculacion_mapa_conceptual.csv
+Archivos con cambios sin registrar: 2
+   D F1/notebooks/F1_Prueba.ipynb
+   ?? F1/notebooks/S1_F1_Definicion.ipynb
 
 Remoto             : origin	https://github.com/RJaramilloP/proyecto-grupo5-mcdi500.git (fetch)
