@@ -1,0 +1,15 @@
+columna,pct_nulos,n_unicos,motivo
+CurbRampWork,96.44,1,"96,4% de nulos y un unico valor distinto: varianza cero"
+bpa,95.67,215,"95,7% de nulos"
+permit_address,63.06,1997,"63,1% de nulos; redundante con streetname y cross streets"
+24/7 Contact,2.95,421,"dato de contacto, sin valor analitico"
+AgentPhone,1.59,746,"dato de contacto, sin valor analitico"
+Agent,0.13,704,reemplazada por agente agrupado
+X,0.12,5750,mismo punto en California State Plane; redundante
+Y,0.12,5748,mismo punto en California State Plane; redundante
+supervisor_district,0.03,11,reemplazada por distrito como categorica
+Location,0.0,5758,"geometria en texto, redundante con Latitude y Longitude"
+the_geom,0.0,5758,"geometria en texto, redundante con Latitude y Longitude"
+data_loaded_at,0.0,191,"sello de carga del portal, sin valor analitico"
+Permit Type,0.0,26,reemplazada por tipo_permiso agrupado
+cnn,0.0,5254,"identificador de segmento vial, sin valor explicativo"
