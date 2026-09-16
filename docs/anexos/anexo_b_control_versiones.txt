@@ -1,18 +1,22 @@
 Rama actual        : main
 
 Últimos commits
+cc1d369 docs: Se ejecuta por última vez cuaderno F1 para actualizar datos de control de versiones y estructura.
 6c653df fix: Implementación de código final de F2 con generación de anexos y set de datos procesados
 c0f373b fix: Cierre teórico y de estructura de cuaderno F2 (Código de verificación de anexos pendiente)
 bd0b5a0 fix: Se completa la etapa de verificación y aplicación de recursividad en metadatos
 b165b9c fix: Se implementan los códigos faltantes de la sección 6 y se generan anexos
-cba19dc feat: Definición de estructura de sección 6 y prueba de validación de dataset final
 
 Contribuciones por integrante
 18	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
-    15	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
+    16	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
     12	belenfassler <102735967+belenfassler@users.noreply.github.com>
 
-Archivos con cambios sin registrar: 1
-   M F2/F2_Prueba.ipynb
+Archivos con cambios sin registrar: 5
+   M  F1/notebooks/S1_F1_Definicion.ipynb
+    D F2/F2_Prueba.ipynb
+    M docs/anexos/anexo_b_control_versiones.txt
+    M docs/anexos/anexo_g1_pruebas_fase1.txt
+   ?? F2/S1_F2_Preprocesamiento.ipynb
 
 Remoto             : origin	https://github.com/RJaramilloP/proyecto-grupo5-mcdi500.git (fetch)
