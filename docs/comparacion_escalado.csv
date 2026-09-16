@@ -1,0 +1,4 @@
+escalador,|valor|>5 (train),máx |valor| (train),máx |valor| (test),RIC medio,"fuera de [0,1] en test"
+StandardScaler,59,13.99,15.27,0.911,3529
+MinMaxScaler,0,1.0,1.91,0.219,206
+RobustScaler,1610,332.22,405.22,1.0,4581

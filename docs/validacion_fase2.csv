@@ -1,0 +1,15 @@
+comprobacion,resultado,detalle
+Sin valores nulos,OK,total = 0
+Todas las columnas son numéricas,OK,no numéricas: []
+Sin valores infinitos,OK,
+Grupo one-hot 'tipo_permiso' coherente,OK,11 columnas
+Grupo one-hot 'agente' coherente,OK,13 columnas
+Grupo one-hot 'distrito' coherente,OK,12 columnas
+Grupo one-hot 'inspector' coherente,OK,14 columnas
+Grupo one-hot 'analysis_neighborhood' coherente,OK,42 columnas
+Grupo one-hot 'permit_zipcode' coherente,OK,30 columnas
+Ninguna variable prohibida presente,OK,"excluidas: ['Status', 'permit_start_date', 'permit_end_date']"
+El objetivo no está entre las características,OK,
+Sin permisos compartidos entre particiones,OK,1604 train / 535 test
+Filas coinciden con lo declarado en la Fase 1,OK,6010 de 6010
+Archivo crudo no modificado,OK,Active_Street-Use_Permits_20260909.csv

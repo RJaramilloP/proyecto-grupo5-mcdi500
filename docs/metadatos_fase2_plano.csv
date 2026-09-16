@@ -1,0 +1,27 @@
+clave,valor
+datos.archivo,Active_Street-Use_Permits_20260909.csv
+datos.corte,2026-09-09
+datos.filas,6010
+datos.fuente.autor,San Francisco Public Works
+datos.fuente.licencia,Open Data Commons Public Domain Dedication and License (PDDL) 1.0
+datos.fuente.plataforma,DataSF
+datos.fuente.url,https://data.sf.gov/City-Infrastructure/Active-Street-Use-Permits/x8nh-xzn6/about_data
+decisiones.atipicos,no se eliminan; las colas son reales
+decisiones.codificacion,OneHotEncoder(handle_unknown='ignore')
+decisiones.escalador,StandardScaler
+decisiones.imputacion.categoricas,categoría explícita 'Desconocido'
+decisiones.imputacion.numericas,mediana de entrenamiento
+decisiones.nominales,"tipo_permiso, agente, distrito, inspector, analysis_neighborhood, permit_zipcode"
+decisiones.numericas,"n_segmentos, lag_aprob_inicio, anio_aprobacion, mes_inicio, largo_proposito"
+decisiones.particion.esquema,por permit_number (GroupShuffleSplit)
+decisiones.particion.permisos_test,535
+decisiones.particion.permisos_train,1604
+decisiones.particion.test_size,0.25
+excluidas_por_fuga,"Status, permit_start_date, permit_end_date"
+objetivo.principal,duracion_dias
+objetivo.transformado,duracion_log (log1p)
+proyecto.fase,F2
+proyecto.fecha_ejecucion,2026-09-16
+proyecto.grupo,Grupo 5
+proyecto.nombre,Factores asociados a la duración autorizada de permisos de vía pública
+proyecto.semilla,42

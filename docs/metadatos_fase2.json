@@ -1,0 +1,59 @@
+{
+  "proyecto": {
+    "nombre": "Factores asociados a la duración autorizada de permisos de vía pública",
+    "grupo": "Grupo 5",
+    "fase": "F2",
+    "semilla": 42,
+    "fecha_ejecucion": "2026-09-16"
+  },
+  "datos": {
+    "archivo": "Active_Street-Use_Permits_20260909.csv",
+    "corte": "2026-09-09",
+    "filas": 6010,
+    "fuente": {
+      "plataforma": "DataSF",
+      "autor": "San Francisco Public Works",
+      "licencia": "Open Data Commons Public Domain Dedication and License (PDDL) 1.0",
+      "url": "https://data.sf.gov/City-Infrastructure/Active-Street-Use-Permits/x8nh-xzn6/about_data"
+    }
+  },
+  "decisiones": {
+    "particion": {
+      "esquema": "por permit_number (GroupShuffleSplit)",
+      "test_size": 0.25,
+      "permisos_train": 1604,
+      "permisos_test": 535
+    },
+    "imputacion": {
+      "categoricas": "categoría explícita 'Desconocido'",
+      "numericas": "mediana de entrenamiento"
+    },
+    "escalador": "StandardScaler",
+    "codificacion": "OneHotEncoder(handle_unknown='ignore')",
+    "atipicos": "no se eliminan; las colas son reales",
+    "nominales": [
+      "tipo_permiso",
+      "agente",
+      "distrito",
+      "inspector",
+      "analysis_neighborhood",
+      "permit_zipcode"
+    ],
+    "numericas": [
+      "n_segmentos",
+      "lag_aprob_inicio",
+      "anio_aprobacion",
+      "mes_inicio",
+      "largo_proposito"
+    ]
+  },
+  "objetivo": {
+    "principal": "duracion_dias",
+    "transformado": "duracion_log (log1p)"
+  },
+  "excluidas_por_fuga": [
+    "Status",
+    "permit_start_date",
+    "permit_end_date"
+  ]
+}

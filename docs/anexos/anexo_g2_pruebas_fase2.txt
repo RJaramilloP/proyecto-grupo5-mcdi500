@@ -1,0 +1,14 @@
+[OK] codificar_one_hot: caso normal y caso límite
+[OK] codificar_one_hot lanza KeyError: "La columna 'inexistente' no existe."...
+[OK] codificar_one_hot lanza ValueError: Se esperaban 3 nombres y llegaron 1....
+[OK] detectar_atipicos_iqr: caso normal y serie vacía
+[OK] detectar_atipicos_iqr lanza ValueError: El factor debe ser positivo.
+[OK] verificar_escalamiento: detecta el caso que cumple y el que no
+[OK] verificar_escalamiento lanza ValueError: Método no contemplado: 'inventado'
+[OK] ImputadorMixto: caso normal y columnas enteramente ausentes
+[OK] ImputadorMixto lanza KeyError: "Columnas ausentes: ['inexistente']"...
+[OK] ImputadorMixto lanza RuntimeError: Llame a fit antes de transform.
+[OK] comparar_imputaciones lanza ValueError: fraccion debe estar entre 0 y 1
+[OK] cargar_datos lanza FileNotFoundError: No se encontro el archivo archivo_que_no_existe_...
+
+[OK] 17/17 pruebas superadas

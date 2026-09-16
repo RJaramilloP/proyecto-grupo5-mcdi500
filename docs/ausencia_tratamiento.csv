@@ -1,0 +1,5 @@
+variable,pct_ausente,mediana_presente,mediana_ausente,razon,tratamiento
+Permit Purpose,26.3,452,3934,8.7,categoría explícita
+Inspector,38.5,459,675,1.47,categoría explícita
+Cross Street 2,16.0,478,521,1.09,imputación
+permit_zipcode,13.6,478,487,1.02,imputación
