@@ -1,60 +1,124 @@
-# Factores asociados a la duración autorizada de los permisos de uso de vía pública en San Francisco — Grupo 5
+# Factores asociados a la duración de los permisos de uso de vía pública en San Francisco
 
-Los permisos de uso de vía pública regulan la ocupación temporal del espacio público por excavaciones, obras, instalaciones de telecomunicaciones y usos comerciales. La duración autorizada de cada permiso determina cuánto tiempo una calle queda afectada. El problema es de asociación: identificar qué factores se relacionan con esa duración, medida como el número de días entre la fecha de inicio y la de término del permiso.
 
 ## Integrantes
-- MARCO ÁLVAREZ ARAYA (@Marco30101994-Unab)
-- MARÍA FASSLER NEUMANN (@belenfassler)
-- RICARDO JARAMILLO PULGAR (@RJaramilloP)
+
+- Marco Álvarez Araya ([@Marco30101994-Unab](https://github.com/Marco30101994-Unab))
+- María Fassler Neumann ([@belenfassler](https://github.com/belenfassler))
+- Ricardo Jaramillo Pulgar ([@RJaramilloP](https://github.com/RJaramilloP))
 
 ## Pregunta de investigación
-¿Qué proporción de la variación en la duración se asocia al tipo de permiso?
 
-## Datos
-- Fuente: Active Street-Use Permits — conjunto de trabajo (San Francisco Public Works, DataSF)
-- Enlace: https://data.sf.gov/City-Infrastructure/Active-Street-Use-Permits/x8nh-xzn6/about_data
-- Licencia: Open Data Commons Public Domain Dedication and License (PDDL) 1.0
-- Corte: 2026-09-09 · descargado el 2026-09-09
-- Actualización: diaria. El CSV en `data/raw/` ES el dato: volver a
-  descargarlo produce un conjunto distinto y rompe la reproducibilidad.
-- Conjunto de trabajo: 6010 filas x 23 columnas
-- Ubicación esperada: `data/raw/`
+¿Qué factores se asocian con la duración autorizada de los permisos vigentes de uso de vía pública en San Francisco al 9 de septiembre de 2026, medida como el número de días entre las fechas de inicio y término del permiso, considerando el tipo de permiso, el barrio de emplazamiento, el agente y el año de aprobación?
 
-## Limitación declarada
-La fuente publica solo permisos vigentes, de modo que los de mayor duración quedan
-sobrerrepresentados. Las conclusiones describen los permisos vigentes al corte, no la
-población de permisos otorgados. El histórico sin ese filtro es `b6tj-gt35`.
+El proyecto tiene un alcance descriptivo y asociativo. Por lo tanto, sus resultados no deben interpretarse como relaciones causales.
+
+## Datos utilizados
+
+Los datos provienen del conjunto [Active Street-Use Permits](https://data.sf.gov/City-Infrastructure/Active-Street-Use-Permits/x8nh-xzn6/about_data), publicado por San Francisco Public Works en DataSF.
+
+- Fecha de la data: 9 de septiembre de 2026.
+- Licencia: PDDL 1.0.
+- Archivo original: `data/raw/Active_Street-Use_Permits_20260909.csv`.
+- Conjunto de trabajo: 6.010 registros y 2.139 permisos.
+- Unidad de observación: segmento de calle.
+- Unidad de análisis definida en Fase 3: permiso.
+
+El archivo original se conserva sin modificaciones. Debido a que la fuente se actualiza diariamente, volver a descargarla podría producir resultados diferentes.
+
+### Limitación
+
+La fuente contiene solamente permisos vigentes en la fecha de corte. Esto puede sobrerrepresentar los permisos de mayor duración. En consecuencia, los resultados describen los permisos activos al 9 de septiembre de 2026 y no la totalidad histórica de permisos otorgados.
+
+## Desarrollo del proyecto
+
+- **Fase 1:** definición del problema, entorno reproducible y documentación de los datos.
+- **Fase 2:** limpieza, transformación, imputación, codificación y escalamiento.
+- **Fase 3:** reorganización del pipeline mediante programación orientada a objetos, evaluación de eficiencia, validaciones y definición de la unidad de análisis.
+- **Fase 4:** análisis final, interpretación y comunicación de resultados.
 
 ## Estructura del repositorio
+
+```text
+F1/                 notebooks de la Fase 1
+F2/                 notebooks de la Fase 2
+F3/                 notebook de la Fase 3
+F4/                 archivos de la Fase 4
+data/raw/           datos originales
+data/processed/     conjuntos procesados
+src/                módulos reutilizables
+artefactos/         objetos ajustados
+docs/               metadatos, resultados y anexos
 ```
-data/raw/        datos originales, sin modificar
-data/processed/  datos tras limpieza y transformación (F2)
-docs/            diccionario, fichas y metadatos
-src/             módulos reutilizables del proyecto
-F1/ F2/ F3/ F4/  cuadernos e informes de cada fase
+
+La carpeta `src/` contiene solamente código fuente. Los archivos serializados se guardan en `artefactos/`.
+
+## Instalación
+
+Crear y activar un entorno virtual:
+
+### Linux o macOS
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-## Requisitos y ejecución
-    python -m venv .venv
-    source .venv/bin/activate        # Windows: .venv\Scripts\activate
-    python -m pip install -r requirements.txt
+### Windows PowerShell
 
-Ejecutar los cuadernos en orden: primero F1, después F2.
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
 
-### Dependencias declaradas
-- ipykernel
-- jupyterlab
-- matplotlib==3.9.4
-- notebook
-- numpy==2.0.2
-- pandas==2.3.3
-- scikit-learn==1.6.1
+Luego, iniciar Jupyter:
+
+```bash
+jupyter lab
+```
+
+Las versiones oficiales de las dependencias se encuentran en `requirements.txt`.
+
+## Ejecución
+
+Los notebooks deben ejecutarse desde la raíz del repositorio y en el siguiente orden:
+
+1. Fase 1.
+2. Fase 2.
+3. `F3/S2_F3_NucleoAlgoritmico_Eficiencia_POO.ipynb`.
+
+En cada notebook se recomienda utilizar:
+
+**Kernel → Restart Kernel and Run All Cells**
+
+La ejecución de Fase 3 debe terminar sin errores y generar los conjuntos procesados, parámetros, mediciones de eficiencia, metadatos y anexos correspondientes.
+
+## Decisiones técnicas principales
+
+- Semilla aleatoria fijada en 42.
+- Fechas convertidas mediante formatos declarados explícitamente.
+- Partición agrupada por `permit_number`.
+- Ajuste de transformaciones solamente con datos de entrenamiento.
+- Un permiso por fila como unidad principal de análisis.
+- Comparación reproducible de implementaciones mediante tiempo y memoria.
+- Organización modular mediante clases, transformadores y un pipeline reutilizable.
 
 ## Convención de commits
-Prefijos usados: docs, data, feat, fix.
 
-## Decisiones técnicas
-- Los datos son comunes a todas las fases (`data/`); los cuadernos se separan por fase.
-- La raíz del proyecto se detecta por marcador, no se asume igual al directorio de lanzamiento.
-- Semilla aleatoria fijada en 42 para asegurar reproducibilidad.
-- El formato de las fechas se declara de forma explícita y nunca se deduce.
+Se utilizan los prefijos:
+
+- `feat`: nuevas funcionalidades;
+- `fix`: correcciones;
+- `data`: datos y transformaciones;
+- `test`: pruebas;
+- `perf`: eficiencia;
+- `docs`: documentación;
+- `refactor`: reorganización del código.
+
+Las contribuciones pueden verificarse mediante:
+
+```bash
+git shortlog -sne HEAD
+```
