@@ -1,0 +1,13 @@
+origen,observación,mejora aplicada,evidencia,estado
+Sumativa 1,"Informe: 29 − 14 ≠ 23, sin mencionar las derivadas",Aritmética calculada desde el código y comprobada con assert,F3 §6.1,resuelto
+Sumativa 1,Apartado X declara un solo autor; el repositorio tiene tres,El Anexo B ya mostraba 18/16/12: el texto quedó de un borrador previo,informe F3,pendiente de redacción
+Sumativa 1,Untitled.ipynb vacío en la raíz,Eliminado del repositorio,repositorio,pendiente
+Sumativa 1,preprocesador_f2.pkl versionado dentro de src/,Los artefactos binarios pasan a artefactos/; src/ queda solo para código,F3 §18.1,resuelto
+Sumativa 1,Faltan las carpetas F3 y F4 que el informe declara,"Creadas, con el cuaderno de la Fase 3 dentro",repositorio,resuelto
+Sumativa 1,La decisión del logaritmo quedó aplazada,Resuelta por comportamiento observado: no se transforma,F3 §11,resuelto
+Sumativa 1,El argumento de la recursión era cualitativo,Medido a profundidades crecientes contra dos alternativas,F3 §12,resuelto
+Sumativa 1,Unidad de análisis sin definir,"El permiso, con cuatro mediciones que lo sostienen",F3 §10,resuelto
+Fase 3,La codificación de F2 se ajustaba con todo el conjunto,Tres columnas construidas con información de prueba; ajuste unificado en train,F3 §9,resuelto
+Fase 3,Doce funciones sueltas en src/utilidades.py,Reorganizadas en una clase base y nueve hijas con estado,F3 §3-4,resuelto
+Fase 3,'12 de 12 comprobaciones' en F1 cuando validacion_fase2.csv tiene 14,Cifra corregida; la validación se genera desde la tabla,F3 §16.1,resuelto
+Fase 3,La pregunta del README no era la aprobada por el docente,README actualizado con la pregunta multifactor del informe,repositorio,pendiente
