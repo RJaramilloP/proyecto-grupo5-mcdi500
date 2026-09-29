@@ -1,0 +1,5 @@
+implementacion,segundos,memoria_mb,razon_vs_mejor,comparacion
+StandardScaler (scikit-learn),0.00183,0.463,1.0,escalador propio vs scikit-learn
+EscaladorEstandar (propio),0.002418,0.932,1.32,escalador propio vs scikit-learn
+densa: producto X'X,0.001727,0.095,1.0,matriz densa vs dispersa
+dispersa: producto X'X,0.003608,0.832,2.09,matriz densa vs dispersa

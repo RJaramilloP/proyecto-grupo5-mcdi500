@@ -1,0 +1,22 @@
+variable,dtype,n_nulos,n_unicos,origen
+permit_number,object,0,2139,heredada de F1/F2
+duracion_dias,float64,0,231,heredada de F1/F2
+duracion_log,float64,0,231,heredada de F1/F2
+tipo_permiso,object,0,11,heredada de F1/F2
+agente,object,0,13,heredada de F1/F2
+inspector,object,0,14,heredada de F1/F2
+n_segmentos,float64,0,58,heredada de F1/F2
+lag_aprob_inicio,float64,0,174,heredada de F1/F2
+anio_aprobacion,float64,0,11,heredada de F1/F2
+mes_inicio,float64,0,12,heredada de F1/F2
+largo_proposito,float64,0,161,heredada de F1/F2
+tiene_proposito,int64,0,2,heredada de F1/F2
+particion,object,0,2,heredada de F1/F2
+distrito,object,0,11,moda del permiso (F3)
+cruza_distrito,int64,0,2,derivada en F3 (agregación)
+analysis_neighborhood,object,0,39,moda del permiso (F3)
+cruza_analysis_neighborhood,int64,0,2,derivada en F3 (agregación)
+permit_zipcode,object,0,30,moda del permiso (F3)
+cruza_permit_zipcode,int64,0,2,derivada en F3 (agregación)
+Latitude,float64,0,1998,heredada de F1/F2
+Longitude,float64,0,1999,heredada de F1/F2
