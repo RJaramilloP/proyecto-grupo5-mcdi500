@@ -1,20 +1,19 @@
 Rama actual        : main
 
 Últimos commits
+65bc9f0 fix(f3): ejecución final antes de push general
 a8559a1 fix: pines del entorno corregidos; scikit-learn 1.0.2 no admite sparse_output
 f1bf020 test(f3): 20 verificacion final antes de entregar
 15f42df docs(f3): 19 reflexion tecnica
 6b4bf2b docs(f3): 18.4 metadatos de la fase y anexos
-be260af docs(f3): 18.3 trazabilidad de las mejoras
 
 Contribuciones por integrante
-46	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
+47	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
     30	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
     23	belenfassler <102735967+belenfassler@users.noreply.github.com>
      1	MARCO ALVAREZ ARAYA <m.alvarezaraya2@uandresbello.edu>
      1	Marco30101994-Unab <m.alvarezaraya2@uandresbello.edu>
 
-Archivos con cambios sin registrar: 1
-   M requirements.txt
+Archivos con cambios sin registrar: 0
 
 Remoto             : origin	https://github.com/RJaramilloP/proyecto-grupo5-mcdi500.git (fetch)
