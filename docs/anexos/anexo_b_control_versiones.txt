@@ -1,29 +1,20 @@
 Rama actual        : main
 
 Últimos commits
-e32ab66 Merge pull request #1 from RJaramilloP/docs/readme-f3-marco
-dd20ef5 docs(f3): actualizar README e instrucciones de ejecución
-2646280 fix: Se ejecuta nuevamente para verificar estado de entorno virtual
-c27e38c fix: Cambio de nombre de cuaderno F2 y re-ejecución de ambos cuadernos para validación y cierre de actividad
-cc1d369 docs: Se ejecuta por última vez cuaderno F1 para actualizar datos de control de versiones y estructura.
+a8559a1 fix: pines del entorno corregidos; scikit-learn 1.0.2 no admite sparse_output
+f1bf020 test(f3): 20 verificacion final antes de entregar
+15f42df docs(f3): 19 reflexion tecnica
+6b4bf2b docs(f3): 18.4 metadatos de la fase y anexos
+be260af docs(f3): 18.3 trazabilidad de las mejoras
 
 Contribuciones por integrante
-20	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
-    16	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
-    12	belenfassler <102735967+belenfassler@users.noreply.github.com>
+46	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
+    30	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
+    23	belenfassler <102735967+belenfassler@users.noreply.github.com>
      1	MARCO ALVAREZ ARAYA <m.alvarezaraya2@uandresbello.edu>
      1	Marco30101994-Unab <m.alvarezaraya2@uandresbello.edu>
 
-Archivos con cambios sin registrar: 21
-   M F1/notebooks/S1_F1_Definicion.ipynb
-    M F2/S1_F2_Preprocesamiento.ipynb
-   D  Untitled.ipynb
-   RM src/preprocesador_f2.pkl -> artefactos/preprocesador_f2.pkl
-    M docs/anexos/anexo_a_entorno.txt
-    M docs/anexos/anexo_b_control_versiones.txt
-    M docs/anexos/anexo_f1_forma_objetivo.png
-    M docs/anexos/anexo_f2_duracion_por_tipo.png
-    M docs/anexos/anexo_f3_patron_faltantes.png
-    M docs/anexos/anexo_f4_escaladores.png
+Archivos con cambios sin registrar: 1
+   M requirements.txt
 
 Remoto             : origin	https://github.com/RJaramilloP/proyecto-grupo5-mcdi500.git (fetch)
