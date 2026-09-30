@@ -1,0 +1,18 @@
+componente,rol,responsabilidad,archivo
+Transformador,clase base,Define el contrato y controla el estado de cada paso,src/transformadores.py
+ConversorTipos,clase hija,"Convierte coordenadas, fechas y centinelas con formato declarado.",src/transformadores.py
+DerivadorVariables,clase hija,"Deriva el objetivo y las explicativas, y agrupa las nominales largas.",src/transformadores.py
+SaneadorConjunto,clase hija,Descarta columnas sin valor analitico y filas sin variable objetivo.,src/transformadores.py
+DerivadorAusencia,clase hija,"Codifica la ausencia informativa como variable, en vez de imputarla.",src/transformadores.py
+ImputadorMixto,clase hija,Imputa categoricas con etiqueta explicita y numericas con la mediana.,src/transformadores.py
+CodificadorNominal,clase hija,Convierte una variable nominal en columnas indicadoras 0/1.,src/transformadores.py
+EscaladorEstandar,clase hija,"Centra en cero y escala a desviacion uno, con media y desviacion aprendidas.",src/transformadores.py
+AgregadorPermiso,clase hija,Lleva el conjunto del segmento de calle al permiso.,src/transformadores.py
+ImputadorPorMedia,clase hija,"Paso nuevo, escrito en once líneas, que nadie más necesita conocer.",cuaderno §14.1 (demostración de acoplamiento)
+ImputarPorModa,estrategia (Strategy),Rellena por moda global,src/transformadores.py
+ImputarPorModaDeGrupo,estrategia (Strategy),Rellena por moda por grupo,src/transformadores.py
+NoImputar,estrategia (Strategy),Rellena por categoria explicita,src/transformadores.py
+Pipeline,orquestador,Encadena los pasos y controla la máscara de ajuste,src/pipeline.py
+Validador,verificador,"Comprueba integridad, coherencia y ausencia de fuga",src/pipeline.py
+medir / cronometrar,utilidad,Mide tiempo y memoria de cualquier función,src/medicion.py
+comparar_implementaciones,utilidad,Compara implementaciones exigiendo equivalencia previa,src/medicion.py

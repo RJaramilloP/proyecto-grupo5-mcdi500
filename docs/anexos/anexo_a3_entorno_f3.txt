@@ -1,0 +1,12 @@
+Intérprete      : /usr/bin/python3
+Entorno virtual : [AVISO] parece el Python del sistema
+Carpeta         : /home/claude/limpio/F3
+Sistema         : Linux 6.18.44-fc-v50
+Python          : 3.11.15
+
+Librerías declaradas
+  [OK]  numpy        2.0.2
+  [OK]  pandas       2.3.3
+  [OK]  matplotlib   3.9.4
+  [OK]  sklearn      1.6.1
+  [OK]  scipy        1.13.1

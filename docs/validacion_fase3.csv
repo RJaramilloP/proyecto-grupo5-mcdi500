@@ -1,0 +1,14 @@
+comprobacion,resultado,detalle
+Sin valores nulos,OK,total = 0
+Todas las caracteristicas son numericas,OK,no numericas: []
+Sin valores infinitos,OK,infinitos = 0
+Grupo one-hot 'tipo_permiso' coherente,OK,10 columnas; 2 filas con categoria no vista en ajuste
+Grupo one-hot 'agente' coherente,OK,13 columnas; 0 filas con categoria no vista en ajuste
+Grupo one-hot 'distrito' coherente,OK,12 columnas; 0 filas con categoria no vista en ajuste
+Grupo one-hot 'inspector' coherente,OK,14 columnas; 0 filas con categoria no vista en ajuste
+Grupo one-hot 'analysis_neighborhood' coherente,OK,42 columnas; 0 filas con categoria no vista en ajuste
+Grupo one-hot 'permit_zipcode' coherente,OK,29 columnas; 1 filas con categoria no vista en ajuste
+Ninguna variable prohibida presente,OK,"excluidas: ['Status', 'permit_start_date', 'permit_end_date']"
+El objetivo no esta entre las caracteristicas,OK,duracion_dias
+Sin grupos compartidos entre particiones,OK,1604 train / 535 test
+Filas coinciden con lo declarado,OK,6010 de 6010

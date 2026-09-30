@@ -1,0 +1,94 @@
+{
+  "proyecto": {
+    "nombre": "Factores asociados a la duración autorizada de permisos de vía pública",
+    "grupo": "Grupo 5",
+    "fase": "F3",
+    "repositorio": "https://github.com/RJaramilloP/proyecto-grupo5-mcdi500",
+    "semilla": 42,
+    "integrantes": [
+      "Marco Álvarez Araya",
+      "María Belén Fassler Neumann",
+      "Ricardo Jaramillo Pulgar"
+    ]
+  },
+  "herencia": {
+    "fase_1": [
+      "diccionario_variables.csv",
+      "metadatos_fase1.json",
+      "utilidades.py"
+    ],
+    "fase_2": [
+      "permisos_procesado.csv",
+      "permisos_limpio.csv",
+      "metadatos_fase2.json"
+    ]
+  },
+  "arquitectura": {
+    "clase_base": "Transformador",
+    "hijas": [
+      "AgregadorPermiso",
+      "CodificadorNominal",
+      "ConversorTipos",
+      "DerivadorAusencia",
+      "DerivadorVariables",
+      "EscaladorEstandar",
+      "ImputadorMixto",
+      "ImputadorPorMedia",
+      "SaneadorConjunto"
+    ],
+    "orquestador": "Pipeline",
+    "patron": {
+      "nombre": "Strategy",
+      "aplicado_en": "comparación de estrategias de imputación",
+      "descartados": [
+        "Factory",
+        "Observer",
+        "Singleton"
+      ]
+    },
+    "modulos": {
+      "src/transformadores.py": "contrato y pasos",
+      "src/pipeline.py": "orquestación y validación",
+      "src/medicion.py": "tiempo y memoria"
+    }
+  },
+  "decisiones": {
+    "unidad_analisis": {
+      "elegida": "permiso",
+      "observacion": "segmento",
+      "n_permisos": 2139,
+      "n_segmentos": 6010,
+      "n_efectivo_kish": 112.9
+    },
+    "transformacion_objetivo": {
+      "aplicada": false,
+      "asimetria_permiso": -0.019,
+      "asimetria_log": -0.538
+    },
+    "fuga_corregida": {
+      "caracteristicas_f2": 128,
+      "caracteristicas_f3": 126,
+      "columnas_retiradas": [
+        "insp_alastair_johns",
+        "insp_karl_johnson",
+        "tipo_minorenc",
+        "zip_94129"
+      ]
+    },
+    "representacion": {
+      "elegida": "densa",
+      "densidad": 0.0917,
+      "motivo": "menos de 6 MB; el formato de entrega es CSV"
+    },
+    "recursividad": {
+      "elegida": "recursiva",
+      "motivo": "profundidad no acotada de los metadatos"
+    }
+  },
+  "verificaciones": {
+    "equivalencia_con_fase2": "assert_frame_equal estricto, 6010 x 132",
+    "equivalencia_modulo_cuaderno": "assert_frame_equal estricto",
+    "controles_de_entrega": 7,
+    "comprobaciones_de_validacion": 13
+  }
+}

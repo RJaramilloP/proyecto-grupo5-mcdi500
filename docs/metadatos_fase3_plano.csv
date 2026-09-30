@@ -1,0 +1,38 @@
+clave,valor
+arquitectura.clase_base,Transformador
+arquitectura.hijas,"AgregadorPermiso, CodificadorNominal, ConversorTipos, DerivadorAusencia, DerivadorVariables, EscaladorEstandar, ImputadorMixto, ImputadorPorMedia, SaneadorConjunto"
+arquitectura.modulos.src/medicion.py,tiempo y memoria
+arquitectura.modulos.src/pipeline.py,orquestación y validación
+arquitectura.modulos.src/transformadores.py,contrato y pasos
+arquitectura.orquestador,Pipeline
+arquitectura.patron.aplicado_en,comparación de estrategias de imputación
+arquitectura.patron.descartados,"Factory, Observer, Singleton"
+arquitectura.patron.nombre,Strategy
+decisiones.fuga_corregida.caracteristicas_f2,128
+decisiones.fuga_corregida.caracteristicas_f3,126
+decisiones.fuga_corregida.columnas_retiradas,"insp_alastair_johns, insp_karl_johnson, tipo_minorenc, zip_94129"
+decisiones.recursividad.elegida,recursiva
+decisiones.recursividad.motivo,profundidad no acotada de los metadatos
+decisiones.representacion.densidad,0.0917
+decisiones.representacion.elegida,densa
+decisiones.representacion.motivo,menos de 6 MB; el formato de entrega es CSV
+decisiones.transformacion_objetivo.aplicada,False
+decisiones.transformacion_objetivo.asimetria_log,-0.538
+decisiones.transformacion_objetivo.asimetria_permiso,-0.019
+decisiones.unidad_analisis.elegida,permiso
+decisiones.unidad_analisis.n_efectivo_kish,112.9
+decisiones.unidad_analisis.n_permisos,2139
+decisiones.unidad_analisis.n_segmentos,6010
+decisiones.unidad_analisis.observacion,segmento
+herencia.fase_1,"diccionario_variables.csv, metadatos_fase1.json, utilidades.py"
+herencia.fase_2,"permisos_procesado.csv, permisos_limpio.csv, metadatos_fase2.json"
+proyecto.fase,F3
+proyecto.grupo,Grupo 5
+proyecto.integrantes,"Marco Álvarez Araya, María Belén Fassler Neumann, Ricardo Jaramillo Pulgar"
+proyecto.nombre,Factores asociados a la duración autorizada de permisos de vía pública
+proyecto.repositorio,https://github.com/RJaramilloP/proyecto-grupo5-mcdi500
+proyecto.semilla,42
+verificaciones.comprobaciones_de_validacion,13
+verificaciones.controles_de_entrega,7
+verificaciones.equivalencia_con_fase2,"assert_frame_equal estricto, 6010 x 132"
+verificaciones.equivalencia_modulo_cuaderno,assert_frame_equal estricto

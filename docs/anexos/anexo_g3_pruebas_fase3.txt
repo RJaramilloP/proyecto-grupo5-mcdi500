@@ -1,0 +1,22 @@
+--- CASOS NORMALES ---
+[OK] Caso normal: el pipeline conserva las filas y no deja nulos tratados
+[OK] Caso normal: la agregación devuelve un permiso por fila
+[OK] Caso normal: cada fila activa exactamente una indicadora
+
+--- CASOS LÍMITE ---
+[OK] Límite: conjunto de una sola fila
+[OK] Límite: columna sin nulos, valores intactos
+[OK] Límite: variable nominal con un solo nivel
+[OK] Límite: columna de varianza cero no produce división por cero
+[OK] Límite: categoría no vista en ajuste no genera columna y queda en ceros
+
+--- EXCEPCIONES ---
+[OK] NotImplementedError : Cada clase hija debe implementar aprender().
+[OK] KeyError            : "ImputadorMixto(no_existe): columnas ausentes: ['no_existe
+[OK] RuntimeError        : CodificadorNominal(tipo_permiso): hay que ajustar antes de
+[OK] TypeError           : pipeline: se esperaba un Transformador y llego str.
+[OK] ValueError          : AgregadorPermiso(permit_number): estas columnas no son con
+[OK] ValueError          : Se necesitan al menos dos implementaciones para comparar.
+[OK] ValueError          : pipeline: la mascara tiene 10 filas y el conjunto 6010. Un
+
+[OK] Batería de pruebas de la Fase 3 superada

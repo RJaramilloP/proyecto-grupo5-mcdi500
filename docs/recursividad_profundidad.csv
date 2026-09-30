@@ -1,0 +1,7 @@
+profundidad,recursiva_ms,iterativa_ms,bucles_ms,hojas,rec/iter,bucles_correcta
+1,0.0017,0.0017,0.0009,3,1.0,True
+2,0.0062,0.0058,0.0032,9,1.07,True
+3,0.021,0.0176,0.0047,27,1.19,False
+4,0.0647,0.0519,0.0047,81,1.25,False
+5,0.199,0.1558,0.0051,243,1.28,False
+6,0.6281,0.4873,0.009,729,1.29,False

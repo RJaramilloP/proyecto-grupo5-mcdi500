@@ -1,0 +1,19 @@
+variable,permisos con más de un valor,% de permisos,nivel
+Latitude,191,8.9,segmento
+Longitude,191,8.9,segmento
+permit_zipcode,124,5.8,segmento
+analysis_neighborhood,79,3.7,segmento
+distrito,51,2.4,segmento
+duracion_dias,0,0.0,permiso
+duracion_log,0,0.0,permiso
+agente,0,0.0,permiso
+inspector,0,0.0,permiso
+tipo_permiso,0,0.0,permiso
+lag_aprob_inicio,0,0.0,permiso
+n_segmentos,0,0.0,permiso
+anio_aprobacion,0,0.0,permiso
+mes_inicio,0,0.0,permiso
+tiene_proposito,0,0.0,permiso
+largo_proposito,0,0.0,permiso
+permit_end_date,0,0.0,permiso
+permit_start_date,0,0.0,permiso

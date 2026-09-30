@@ -1,0 +1,7 @@
+variable,ajuste con todo,ajuste con entrenamiento,columnas solo visibles en prueba
+tipo_permiso,11,10,tipo_minorenc
+agente,13,13,—
+distrito,12,12,—
+inspector,14,14,"insp_alastair_johns, insp_karl_johnson"
+analysis_neighborhood,42,42,—
+permit_zipcode,30,29,zip_94129
