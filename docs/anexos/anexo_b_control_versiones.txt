@@ -1,20 +1,29 @@
 Rama actual        : main
 
 Últimos commits
+e32ab66 Merge pull request #1 from RJaramilloP/docs/readme-f3-marco
+dd20ef5 docs(f3): actualizar README e instrucciones de ejecución
+2646280 fix: Se ejecuta nuevamente para verificar estado de entorno virtual
 c27e38c fix: Cambio de nombre de cuaderno F2 y re-ejecución de ambos cuadernos para validación y cierre de actividad
 cc1d369 docs: Se ejecuta por última vez cuaderno F1 para actualizar datos de control de versiones y estructura.
-6c653df fix: Implementación de código final de F2 con generación de anexos y set de datos procesados
-c0f373b fix: Cierre teórico y de estructura de cuaderno F2 (Código de verificación de anexos pendiente)
-bd0b5a0 fix: Se completa la etapa de verificación y aplicación de recursividad en metadatos
 
 Contribuciones por integrante
-19	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
+20	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
     16	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
     12	belenfassler <102735967+belenfassler@users.noreply.github.com>
+     1	MARCO ALVAREZ ARAYA <m.alvarezaraya2@uandresbello.edu>
+     1	Marco30101994-Unab <m.alvarezaraya2@uandresbello.edu>
 
-Archivos con cambios sin registrar: 3
+Archivos con cambios sin registrar: 21
    M F1/notebooks/S1_F1_Definicion.ipynb
-    M requirements.txt
-   ?? Untitled.ipynb
+    M F2/S1_F2_Preprocesamiento.ipynb
+   D  Untitled.ipynb
+   RM src/preprocesador_f2.pkl -> artefactos/preprocesador_f2.pkl
+    M docs/anexos/anexo_a_entorno.txt
+    M docs/anexos/anexo_b_control_versiones.txt
+    M docs/anexos/anexo_f1_forma_objetivo.png
+    M docs/anexos/anexo_f2_duracion_por_tipo.png
+    M docs/anexos/anexo_f3_patron_faltantes.png
+    M docs/anexos/anexo_f4_escaladores.png
 
 Remoto             : origin	https://github.com/RJaramilloP/proyecto-grupo5-mcdi500.git (fetch)
