@@ -53,6 +53,8 @@ docs/               metadatos, resultados y anexos
 
 La carpeta `src/` contiene solamente código fuente. Los archivos serializados se guardan en `artefactos/`.
 
+La ejecución final de los notebooks de fases 1, 2 y 3 fue realizada con un kernel asociado al desarrollo de la fase 4.
+
 ## Instalación
 
 Crear y activar un entorno virtual:
