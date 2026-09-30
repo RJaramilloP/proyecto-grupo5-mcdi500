@@ -29,7 +29,7 @@ P2,Flujo reproducible,2. Configurar el entorno,F1 §2 y §3.2,requirements.txt g
 P2,Flujo reproducible,3. Estructurar y versionar,F1 §3 y §6,Árbol creado y validado; consultas a git,Materializado
 P2,Flujo reproducible,4. Definir variables y roles,F1 §5.3 y §9,Diccionario y metadatos como contrato entre fases,Materializado
 P2,Flujo reproducible,5. Limpiar y transformar,F2 §3 a §7,data/processed con los conjuntos limpio y procesado,Materializado
-P2,Flujo reproducible,6. Validar,F2 §8,"docs/validacion_fase2.csv, 12 de 12 comprobaciones",Materializado
+P2,Flujo reproducible,6. Validar,F2 §8,"docs/validacion_fase2.csv, 14 de 14 comprobaciones",Materializado
 P2,Flujo reproducible,"7. Modelar, analizar y comunicar",Fases 3 y 4,"Modelado, eficiencia algorítmica y hallazgos",Proyectado
 P2,Ciclo colaborativo,Rama por integrante,Historial del repositorio,Ramas nominales antes de integrar,Materializado
 P2,Ciclo colaborativo,Editar el notebook,F1 y F2,Celda narrativa acompañada de celda de código,Materializado
