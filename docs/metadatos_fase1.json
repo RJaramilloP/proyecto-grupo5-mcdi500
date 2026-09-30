@@ -6,13 +6,13 @@
   "semilla": 42,
   "python": "3.9.13",
   "sistema": "Darwin 25.6.0",
-  "interprete": "/Users/ricardo/Desktop/repo_f12/.venv/bin/python",
+  "interprete": "/Users/ricardo/Desktop/MCDI/f3repo/.venv/bin/python",
   "entorno_virtual": true,
   "dependencias": {
-    "numpy": "1.26.4",
+    "numpy": "2.0.2",
     "pandas": "2.3.3",
-    "matplotlib": "3.5.2",
-    "sklearn": "1.0.2",
+    "matplotlib": "3.9.4",
+    "sklearn": "1.6.1",
     "scipy": "1.13.1"
   },
   "modo_rutas": "estructurado",

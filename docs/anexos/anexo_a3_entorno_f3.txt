@@ -1,5 +1,5 @@
-Intérprete      : /opt/anaconda3/bin/python
-Entorno virtual : [AVISO] parece el Python del sistema
+Intérprete      : /Users/ricardo/Desktop/MCDI/f3repo/.venv/bin/python
+Entorno virtual : [OK] activo
 Carpeta         : /Users/ricardo/Desktop/MCDI/f3repo/F3
 Sistema         : Darwin 25.6.0
 Python          : 3.9.13

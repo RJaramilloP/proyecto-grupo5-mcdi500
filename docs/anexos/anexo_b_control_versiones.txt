@@ -1,19 +1,26 @@
 Rama actual        : main
 
 Últimos commits
+791a9cc doc(f3): Ejecución post push general para registro de anexos
 65bc9f0 fix(f3): ejecución final antes de push general
 a8559a1 fix: pines del entorno corregidos; scikit-learn 1.0.2 no admite sparse_output
 f1bf020 test(f3): 20 verificacion final antes de entregar
 15f42df docs(f3): 19 reflexion tecnica
-6b4bf2b docs(f3): 18.4 metadatos de la fase y anexos
 
 Contribuciones por integrante
-47	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
+48	RJaramilloP <153374817+RJaramilloP@users.noreply.github.com>
     30	Marco30101994-Unab <327074150+Marco30101994-Unab@users.noreply.github.com>
     23	belenfassler <102735967+belenfassler@users.noreply.github.com>
      1	MARCO ALVAREZ ARAYA <m.alvarezaraya2@uandresbello.edu>
      1	Marco30101994-Unab <m.alvarezaraya2@uandresbello.edu>
 
-Archivos con cambios sin registrar: 0
+Archivos con cambios sin registrar: 7
+   M F1/notebooks/S1_F1_Definicion.ipynb
+    M F2/S1_F2_Preprocesamiento.ipynb
+    M F3/S2_F3_NucleoAlgoritmico_Eficiencia_POO.ipynb
+    M docs/anexos/anexo_b_control_versiones.txt
+    M docs/anexos/anexo_g1_pruebas_fase1.txt
+    M requirements.txt
+   ?? log_commits.txt
 
 Remoto             : origin	https://github.com/RJaramilloP/proyecto-grupo5-mcdi500.git (fetch)
